@@ -1,3 +1,5 @@
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 import { GetResponsiveSizeProps } from "@src/shared/@types/svg";
 
 export const getResponsiveSize = ({ props, ...args }: GetResponsiveSizeProps) => {
@@ -16,3 +18,7 @@ export const getResponsiveSize = ({ props, ...args }: GetResponsiveSizeProps) =>
         height: props.size || props.height || args.height ||  "auto",
     };
 };
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}

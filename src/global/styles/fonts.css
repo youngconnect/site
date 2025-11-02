@@ -56,26 +56,26 @@
 }
 
 @utility text-body-18 {
-   font-family: var(--roboto);
+   font-family: var(--font-manrope);
    font-size: clamp(0.875rem, 1.25vw, 1.125rem);
 }
 
 @utility text-body-16 {
-   font-family: var(--roboto);
+   font-family: var(--font-manrope);
    font-size: clamp(0.875rem, 1.11vw, 1rem);
 }
 
 @utility text-body-14 {
-   font-family: var(--roboto);
+   font-family: var(--font-manrope);
    font-size: clamp(0.75rem, 0.97vw, 0.875rem);
 }
 
 @utility text-body-12 {
-   font-family: var(--roboto);
+   font-family: var(--font-manrope);
    font-size: clamp(0.625rem, 0.83vw, 0.75rem);
 }
 
 @utility text-body-10 {
-   font-family: var(--roboto);
+   font-family: var(--font-manrope);
    font-size: clamp(0.5rem, 0.69vw, 0.625rem);
 }

@@ -8,7 +8,7 @@ export default function NotFound() {
          <div className="container mx-auto min-h-[calc(100vh-110px)]">
             <section className="w-1/2 h-full mx-auto py-5 space-y-10">
                <article className="flex-center w-full">
-                  <LogoApp size={"10vw"} />
+                  <LogoApp size={"5vw"} />
                </article>
                <article className="space-y-10 text-center">
                   <div className="space-y-3">
