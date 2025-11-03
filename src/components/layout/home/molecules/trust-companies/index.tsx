@@ -6,7 +6,7 @@ export default function TrustedCompaniesComponent() {
                     {
                         Array.from({ length: 6 })
                         .map(_ => (
-                            <span className="">Delcio</span>
+                            <span className="">Delcio Capolo</span>
                         ))
                     }
                 </div>
