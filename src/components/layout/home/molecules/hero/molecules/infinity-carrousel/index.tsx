@@ -5,7 +5,7 @@ export default function InfinityCarrousel() {
         <div className="flex-1">
             <div className="size-full overflow-hidden rounded-l-md">
                 <div className="relative size-full flex-center">
-                    <div className={"absolute size-[1350px] grid grid-cols-5 gap-3 rotate-45"}>
+                    <div className={"absolute size-svw grid grid-cols-5 gap-3 rotate-45"}>
                         <CarrouselChain />
                         <CarrouselChain />
                         <CarrouselChain />

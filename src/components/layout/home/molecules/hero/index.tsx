@@ -3,7 +3,7 @@ import HeroContent from "./molecules/content";
 
 export default function HeroComponent() {
     return (
-        <article className="size-full flex gap-5 flex-wrap">
+        <article className="size-full flex @sm:flex-col @md:flex-row gap-5">
             <HeroContent />
             <InfinityCarrousel />
         </article>
