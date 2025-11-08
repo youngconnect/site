@@ -2,7 +2,6 @@ import Env from "@src/config/environment";
 import ContainerHomePage from "../container-homepage";
 import { REASONS } from "./constants";
 import { Icon } from "@iconify/react";
-import { cn } from "@src/utils";
 
 export default function WhyChooseUsComponent() {
     return (
@@ -16,7 +15,8 @@ export default function WhyChooseUsComponent() {
                         REASONS.map((reason, index) => (
                             <div key={index} className={"p-10 space-y-10 ring ring-gray-700/65"}>
                                 <div className="flex items-center gap-5">
-                                    <span className="rounded-md size-22 bg-gray-800 ring ring-gray-700/85 flex-center">
+                                    <span className="rounded-md size-22 bg-gray-800 ring ring-gray-700/85 flex-center relative overflow-hidden">
+                                        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(1,86,252,0.13)_0%,transparent_75%)]" />
                                         <Icon icon={reason.icon} color="transparent" fontSize={"2.85rem"} style={{ color: "var(--primary-900)" }} />
                                     </span>
                                     <h1 className="text-headline-20 font-medium">{reason.title}</h1>

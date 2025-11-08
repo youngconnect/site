@@ -4,6 +4,7 @@ import HeroComponent from "./molecules/hero";
 import TrustedCompaniesComponent from "./molecules/trust-companies";
 import ServicesComponent from "./molecules/services";
 import WhyChooseUsComponent from "./molecules/choose-us";
+import TestimonialsComponent from "./molecules/testimonials";
 
 export default function HomePage() {
     return (
@@ -14,6 +15,7 @@ export default function HomePage() {
                 <TrustedCompaniesComponent />
                 <ServicesComponent />
                 <WhyChooseUsComponent />
+                <TestimonialsComponent />
             </section>
         </Fragment>
     );
