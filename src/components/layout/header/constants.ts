@@ -2,7 +2,7 @@ export const HEADER_APP_MENU_ITEMS = [
     { label: "Pagina Inicial", url: "/" },
     { 
         label: "Serviços", 
-        url: "", 
+        url: "/services",
         submenu: [
             { label: "Delcio", url: "/hungry" },
         ]

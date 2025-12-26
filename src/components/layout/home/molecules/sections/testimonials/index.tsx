@@ -1,5 +1,5 @@
 import Env from "@src/config/environment";
-import ContainerHomePage from "../container-homepage";
+import ContainerHomePage from "../../container-homepage";
 import { testimonialService } from "@src/services/testimonials";
 import TestimonialCard from "./molecules/card";
 
@@ -15,7 +15,7 @@ export default async function TestimonialsComponent() {
                 </p>
             }
         >
-            <div className="container mx-auto">
+            <article className="container mx-auto">
                 <div className="grid sm:grid-cols-1 md:grid-cols-2">
                     {
                         testimonials?.map((testimonial, index) => (
@@ -23,7 +23,7 @@ export default async function TestimonialsComponent() {
                         ))
                     }
                 </div>
-            </div>
+            </article>
         </ContainerHomePage>
     );
 }

@@ -4,13 +4,13 @@ import LogoApp from "@src/components/atoms/logo";
 import { HEADER_APP_MENU_ITEMS } from "./constants";
 import Link from "next/link";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@src/components/ui/navigation-menu";
-import useResponsiveDevice from "@src/hooks/use-responsive";
 import ListItem from "./molecules/list-item";
 import { cn } from "@src/utils";
 import { Button } from "@src/components/ui/button";
+import { useMediaQuery } from "react-responsive";
 
 export default function HeaderApp() {
-    const isMobile = useResponsiveDevice();
+    const isMobile = useMediaQuery({ maxWidth: 640 });
     
     return (
         <header className="w-full h-(--header-height)">
