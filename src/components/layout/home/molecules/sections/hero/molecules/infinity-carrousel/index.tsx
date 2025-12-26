@@ -18,7 +18,3 @@ export default function InfinityCarrousel() {
         </div>
     );
 }
-
-function CarrouselItem() {
-
-}

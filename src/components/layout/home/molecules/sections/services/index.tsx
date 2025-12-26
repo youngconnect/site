@@ -2,16 +2,17 @@ import { SERVICES } from "./constants";
 import { Icon } from "@iconify/react";
 import { Button } from "@src/components/ui/button";
 import Link from "next/link";
-import ContainerHomePage from "../container-homepage";
+import ContainerHomePage from "../../container-homepage";
 
 export default function ServicesComponent() {
     return (
         <ContainerHomePage 
             title="Nossos serviços" 
             description="Cada solução é pensada para inspirar, envolver e transformar o seu público. Transformamos presença digital em crescimento e resultados"
+            urlBannerImage={"https://images.unsplash.com/photo-1575470522418-b88b692b8084?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2376"}
         >
-            <div className="container mx-auto">
-                <div className="grid sm:grid-cols-1 md:grid-cols-3">
+            <article className="container mx-auto">
+                <div className="grid grid-cols-1 @md:grid-cols-3">
                     {
                         SERVICES.map((service, index) => (
                             <div key={index} className="space-y-24 p-10 @sm:border-b @sm:last:border-b-0 @md:border-r @md:border-b-0 @md:last:border-r-0 border-gray-700">
@@ -38,7 +39,7 @@ export default function ServicesComponent() {
                         ))
                     }
                 </div>
-            </div>
+            </article>
         </ContainerHomePage>
     );
 }

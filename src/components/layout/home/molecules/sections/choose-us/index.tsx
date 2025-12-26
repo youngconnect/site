@@ -1,5 +1,5 @@
 import Env from "@src/config/environment";
-import ContainerHomePage from "../container-homepage";
+import ContainerHomePage from "../../container-homepage";
 import { REASONS } from "./constants";
 import { Icon } from "@iconify/react";
 
@@ -8,8 +8,9 @@ export default function WhyChooseUsComponent() {
         <ContainerHomePage
             title={`Por quê escolher a ${Env.NEXT_PUBLIC_APP_NAME}`}
             description="Experimente a excelência em artesanato digital com nossa equipe de profissionais qualificados dedicados a entregar resultados excepcionais."
+            urlBannerImage={"https://images.unsplash.com/photo-1730804518415-75297e8d2a41?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=2324"}
         >
-            <div className="container mx-auto">
+            <article className="container mx-auto">
                 <div className="grid md:grid-cols-2 sm:grid-cols-1">
                     {
                         REASONS.map((reason, index) => (
@@ -28,7 +29,7 @@ export default function WhyChooseUsComponent() {
                         ))
                     }
                 </div>
-            </div>
+            </article>
         </ContainerHomePage>
     );
 }

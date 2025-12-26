@@ -6,8 +6,8 @@ import { Icon } from "@iconify/react";
 export default function TrustedCompaniesComponent() {
     return (
         //  border-y border-gray-700/60
-        <article className="w-full bg-linear-to-t from-gray-800/15 dark:from-gray-800 from-3% dark:from-20% to-transparent">
-            <div className="overflow-hidden w-full h-45 flex-center">
+        <section className="w-full bg-linear-to-t from-gray-800/15 dark:from-gray-800 from-3% dark:from-20% to-transparent">
+            <article className="overflow-hidden w-full h-45 flex-center">
                 <div className="container mx-auto">
                     <ul className="flex items-center justify-between py-14" role="menu">
                         {
@@ -20,7 +20,7 @@ export default function TrustedCompaniesComponent() {
                         }
                     </ul>
                 </div>
-            </div>
-        </article>
+            </article>
+        </section>
     );
 }
