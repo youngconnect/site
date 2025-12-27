@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormContactUsType, schemaFormContactUs } from "./schema";
 import { Input } from "@src/components/ui/input";
-import RangeSlider from "./price-range";
+import RangeSlider from "./molecules/price-range";
 import { ComponentProps, FC, useState } from "react";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@src/components/ui/form";
 import { cn } from "@src/utils";

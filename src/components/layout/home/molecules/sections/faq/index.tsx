@@ -67,6 +67,5 @@ export default function FAQComponent() {
                 </Accordion>
             </article>
         </ContainerHomePage>
-    )
+    );
 }
-

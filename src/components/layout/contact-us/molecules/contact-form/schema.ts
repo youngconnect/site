@@ -14,7 +14,7 @@ export const schemaFormContactUs = z.object({
     services: z.array(z.union([z.literal(1), z.literal(2), z.literal(3), z.literal(4), z.literal(5)]))
         .min(1, { message: errorMessages.services }),
     priceInterval: z.array(z.number()),
-    message: z.string().optional()
+    message: z.string().optional(),
 });
 
 export type FormContactUsType = z.infer<typeof schemaFormContactUs>;
