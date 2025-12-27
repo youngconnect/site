@@ -192,7 +192,7 @@ export default function ContactUsForm() {
                     </CardBox>
 
                     <div className="flex justify-center px-5 @md:px-0">
-                        <Button type="submit" className="text-headline-20 w-full @md:w-auto @md:px-12">Enviar</Button>
+                        <Button type="submit" className="text-headline-20 text-[1.05rem] font-normal w-full @md:w-auto @md:px-12 py-2">Enviar</Button>
                     </div>
                 </form>
             </Form>

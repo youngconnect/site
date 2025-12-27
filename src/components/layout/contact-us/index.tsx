@@ -7,6 +7,7 @@ import { Icon } from "@iconify/react";
 import Link from "next/link";
 import Divider from "@src/components/atoms/divider";
 import FooterCardWelcome from "@src/components/molecules/footer-card-welcome";
+import CardContact from "@src/components/molecules/footer/molecules/card-contact";
 
 export default function ContactUsPage() {
     return (
@@ -39,6 +40,27 @@ export default function ContactUsPage() {
 
                 <article className="container mx-auto">    
                     <ContactUsForm />
+                </article>
+
+                <article className="">
+                    <Divider />
+                </article>
+
+                <article className="container mx-auto">
+                    <div className="flex items-center justify-center flex-col @md:flex-row">
+                        <div className="p-10 inline-flex">
+                            <div className="flex-center gap-3">
+                                <h6 className="">Estamos Abertos de</h6>
+                                <p className="px-3 py-2 bg-gray-600 rounded-sm">Segunda à Sexta</p>
+                            </div>
+                        </div>
+
+                        <div className="w-full @md:w-[0.95px] h-[0.85px] @md:h-42 bg-gray-700" />
+
+                        <div className="p-10 inline-flex">
+                            <CardContact className="[&>div]:ring-0 @md:[&>div]:ring-2" />
+                        </div>
+                    </div>
                 </article>
             </ContainerHomePage>
             
