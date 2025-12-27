@@ -14,7 +14,7 @@ export default function WhyChooseUsComponent() {
                 <div className="grid md:grid-cols-2 sm:grid-cols-1">
                     {
                         REASONS.map((reason, index) => (
-                            <div key={index} className={"p-10 space-y-10 ring ring-gray-700/65"}>
+                            <div key={index} className={"p-10 space-y-10 border border-gray-700/65"}>
                                 <div className="flex items-center gap-5">
                                     <span className="rounded-md size-22 bg-gray-800 ring ring-gray-700/85 flex-center relative overflow-hidden">
                                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(1,86,252,0.13)_0%,transparent_75%)]" />

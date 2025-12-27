@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function ThanksComponent() {
     return (
-        <section className="mt-12">
+        <section>
             <article className="relative">
                 <div className="absolute inset-0">
                     <div className="absolute inset-0 z-2 bg-primary-900/15" />

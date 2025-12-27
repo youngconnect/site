@@ -54,14 +54,14 @@ export default function ContactUsForm() {
     }
 
     return (
-        <div className="max-w-[65%] mx-auto mt-10">
+        <div className="p-10 @md:max-w-[65%] mx-auto">
             <Form {...form}>
                 <form 
                     id="form-contact-us" 
                     onSubmit={form.handleSubmit(onSubmit)}
                     className="space-y-10"
                 >
-                    <div className="grid grid-cols-2 gap-10 w-full">
+                    <div className="grid grid-cols-1 @md:grid-cols-2 gap-10 w-full">
                         <CardBox className="w-auto">
                             <FormField
                                 control={form.control}
@@ -102,7 +102,7 @@ export default function ContactUsForm() {
                             name="services"
                             render={() => (
                                 <FormItem>
-                                    <div className="w-full grid grid-cols-2 gap-4">
+                                    <div className="grid grid-cols-1 @md:grid-cols-2 gap-4">
                                         {checkboxOptions.map((option) => (
                                             <FormField
                                                 key={option.id}
@@ -191,8 +191,8 @@ export default function ContactUsForm() {
                         />
                     </CardBox>
 
-                    <div className="w-full flex justify-center">
-                        <Button type="submit" className="px-12 text-headline-20 text-md">Enviar</Button>
+                    <div className="flex justify-center px-5 @md:px-0">
+                        <Button type="submit" className="text-headline-20 w-full @md:w-auto @md:px-12">Enviar</Button>
                     </div>
                 </form>
             </Form>

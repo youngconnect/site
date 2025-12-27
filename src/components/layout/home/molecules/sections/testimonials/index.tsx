@@ -14,6 +14,7 @@ export default async function TestimonialsComponent() {
                     {`Na ${Env.NEXT_PUBLIC_APP_NAME}, temos orgulho em oferecer produtos e serviços digitais excepcionais que impulsionam o sucesso de nossos clientes. Eis o que alguns dos nossos clientes satisfeitos têm a dizer sobre a sua experiência de trabalho connosco`}
                 </p>
             }
+            urlBannerImage={"https://images.unsplash.com/photo-1518181835702-6eef8b4b2113?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
         >
             <article className="container mx-auto">
                 <div className="grid sm:grid-cols-1 md:grid-cols-2">

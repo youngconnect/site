@@ -29,9 +29,11 @@ export default function FAQComponent() {
         <ContainerHomePage 
             title="Perguntas Frequentes" 
             description={`Você ainda tem alguma dúvida? Entre em contato com nossa equipe através do ${Env.NEXT_PUBLIC_EMAIL_COMPANY}`}
+            urlBannerImage={"https://images.unsplash.com/photo-1636574879131-5f3cd5c8a8e1?q=80&w=1939&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+            // urlBannerImage={"https://images.unsplash.com/photo-1665789318391-6057c533005e?q=80&w=2664&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
         >
-            <article className="container mx-auto mt-16">
-                <Accordion type="single" collapsible className="columns-1 md:columns-2 space-y-4">
+            <article className="container mx-auto">
+                <Accordion type="single" collapsible className="columns-1 md:columns-2 space-y-4 p-10">
                     {
                         faqs?.map((faq, index) => (
                             <AccordionItem key={index} value={`faq-${index}`} className="border-none px-10 py-5 ring ring-gray-700/65">

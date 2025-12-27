@@ -1,18 +1,25 @@
-import { Fragment } from "react/jsx-runtime";
 import Link from "next/link";
-import { Button } from "@src/components/ui/button";
 import { labelList } from "./constants";
+import { Fragment } from "react/jsx-runtime";
 
 export default function HeroContent() {
     return (
-        <div className="flex-none w-2/5 px-6">
+        <div className="flex-none w-full @md:w-2/5 @md:px-6 pt-12">
             <div className="size-full flex flex-col justify-center gap-12">
-                <h1 className="text-headline-48">
-                    {/* <b>Estratégia, Tecnologia e Resultados</b>{" "}<span className="text-body-18 font-normal">- Nós construímos</span> */}
+                <h1 className="
+                        text-headline-64 @md:text-headline-48 text-center @md:text-start
+                        w-5/6 @md:w-full mx-auto
+                    "
+                >
                     Estratégia, Tecnologia e Resultados
                 </h1>
-                <div className="w-full h-20 rounded-sm flex-center ring ring-gray-200 dark:ring-gray-700/70 bg-gray-100/80 dark:bg-gray-800/80 backdrop-blur-lg overflow-hidden">
-                    <p className="flex-center gap-1">
+
+                <div className="
+                        w-5/6 @md:w-full mx-auto h-20 overflow-hidden
+                        rounded-sm flex-center ring ring-gray-200 dark:ring-gray-700/70 bg-gray-100/80 dark:bg-gray-800/80 backdrop-blur-lg
+                    "
+                >
+                    <p className="@md:flex items-center hidden gap-1">
                         Para
                         {
                             labelList.map((label, index, arr) => (
@@ -26,14 +33,24 @@ export default function HeroContent() {
                             ))
                         }
                     </p>
+                    <p 
+                        className="text-center text-gray-400 @md:hidden flex items-center gap-1"
+                    >
+                        Para Startups, Médias & Pequenas, Líderes empresariais e Causa Social.
+                    </p>
                 </div>
-                <div className="flex gap-3">
-                    <Link href={""} className="py-3 px-5 rounded-sm ring ring-gray-200 dark:ring-gray-700/70 bg-gray-100 dark:bg-gray-800/80 backdrop-blur-lg">
-                        Projectos Realizados
+                
+                <div className="
+                        flex items-center justify-center @md:justify-start gap-3
+                        w-5/6 mx-auto @md:w-3/5 @md:mx-0
+                    "
+                >
+                    <Link href={""} className="flex-1 py-3 px-5 rounded-sm ring ring-gray-200 dark:ring-gray-700/70 bg-gray-100 dark:bg-gray-800/80 backdrop-blur-lg text-center">
+                        Nossos Projectos
                     </Link>
-                    <Button className="rounded-sm" asChild>
-                        <Link href={""}>Contactar-nos</Link>
-                    </Button>
+                    <Link href={""} className="flex-1 py-3 px-5 rounded-sm ring ring-gray-200 dark:ring-gray-700/70 bg-primary dark:bg-primary backdrop-blur-lg text-center">
+                        Contactar-nos
+                    </Link>
                 </div>
             </div>
         </div>
