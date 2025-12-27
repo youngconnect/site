@@ -5,7 +5,7 @@ import IsMobileHeader from "./molecules/responsive/is-mobile";
 
 export default function HeaderApp() {
     return (
-        <header className="w-full h-(--header-height)">
+        <header className="w-full h-(--header-height) @container">
             <div className="container mx-auto h-full">
                 <IsDesktopHeader />
                 <IsMobileHeader  />
