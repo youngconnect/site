@@ -40,7 +40,7 @@ jobs:
           gh pr create \
             --base main \
             --head develop \
-            --title "🚀 Deploy: develop → main" \
+            --title "feature: deploy develop → main" \
             --body "## Mudanças
           
           Merge automático da branch \`develop\` para \`main\`
