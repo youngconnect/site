@@ -22,7 +22,7 @@ client.interceptors.request.use(
         const AUTH_TOKEN = getToken();
 
         if (AUTH_TOKEN) {
-            (config.headers as any) = {
+            (config.headers as {}) = {
                 ...config.headers,
                 Authorization: `Bearer ${AUTH_TOKEN}`,
             };

@@ -1,0 +1,74 @@
+name: Auto PR para Main
+
+on:
+  push:
+    branches:
+      - develop
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Verificar se PR já existe
+        id: check-pr
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          PR_NUMBER=$(gh pr list --base main --head develop --json number --jq '.[0].number')
+          if [ -z "$PR_NUMBER" ]; then
+            echo "pr_exists=false" >> $GITHUB_OUTPUT
+          else
+            echo "pr_exists=true" >> $GITHUB_OUTPUT
+            echo "pr_number=$PR_NUMBER" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Criar Pull Request
+        if: steps.check-pr.outputs.pr_exists == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          gh pr create \
+            --base main \
+            --head develop \
+            --title "🚀 Deploy: develop → main" \
+            --body "## Mudanças
+          
+          Merge automático da branch \`develop\` para \`main\`
+          
+          ### Último commit:
+          ${{ github.event.head_commit.message }}
+          
+          ---
+          _PR criado automaticamente pelo GitHub Actions_"
+
+      - name: Fazer merge automático
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          if [ "${{ steps.check-pr.outputs.pr_exists }}" == "true" ]; then
+            PR_NUMBER=${{ steps.check-pr.outputs.pr_number }}
+          else
+            PR_NUMBER=$(gh pr list --base main --head develop --json number --jq '.[0].number')
+          fi
+          
+          # Habilita auto-merge
+          gh pr merge $PR_NUMBER --squash --auto
+
+      - name: Aguardar e fazer merge manual (fallback)
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN }}
+        run: |
+          PR_NUMBER=$(gh pr list --base main --head develop --json number --jq '.[0].number')
+          echo "Tentando merge direto..."
+          gh pr merge $PR_NUMBER --squash || echo "Merge requer aprovação manual"
