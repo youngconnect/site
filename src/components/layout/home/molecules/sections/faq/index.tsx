@@ -23,7 +23,7 @@ export default function FAQComponent() {
         }
 
         mutateGetAllFaq({});
-    }, []);
+    }, [isMobile]);
 
     return (
         <ContainerHomePage 
@@ -35,6 +35,7 @@ export default function FAQComponent() {
             <article className="container mx-auto">
                 <Accordion type="single" collapsible className="columns-1 md:columns-2 space-y-4 p-10">
                     {
+                        isLoadingAllFaq ? <span className="">Carregando Componente</span> : 
                         faqs?.map((faq, index) => (
                             <AccordionItem key={index} value={`faq-${index}`} className="border-none px-10 py-5 ring ring-gray-700/65">
                                 <AccordionTrigger 

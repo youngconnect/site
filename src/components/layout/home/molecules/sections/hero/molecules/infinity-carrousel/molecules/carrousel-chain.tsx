@@ -62,6 +62,7 @@ export default function CarrouselChain() {
             cancelAnimationFrame(frame);
             element.current?.removeEventListener('mouseenter', handleMouseEnter);
             element.current?.removeEventListener('mouseleave', handleMouseLeave);
+            element.current = null;
         }
     }, []);
 

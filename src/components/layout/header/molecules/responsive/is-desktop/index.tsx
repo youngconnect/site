@@ -8,9 +8,7 @@ import { HEADER_APP_MENU_ITEMS } from "../../../constants";
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "@src/components/ui/navigation-menu";
 import { Button } from "@src/components/ui/button";
 
-type IsDesktopHeaderProps = {}
-
-export default function IsDesktopHeader(props: IsDesktopHeaderProps) {
+export default function IsDesktopHeader() {
     return (
         <div className="size-full hidden @md:flex justify-between items-center">
             <div className="">
