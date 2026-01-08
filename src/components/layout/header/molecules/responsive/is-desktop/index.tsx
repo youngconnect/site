@@ -27,30 +27,36 @@ export default function IsDesktopHeader() {
                                         <NavigationMenuTrigger className="bg-transparent py-1 rounded-none hover:text-white">{item.label}</NavigationMenuTrigger>
                                         <NavigationMenuContent className="bg-gray-200 dark:bg-gray-700 border-gray-300 dark:border-gray-600">
                                             <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-                                                <li className="row-span-3">
-                                                    <NavigationMenuLink asChild>
-                                                        <Link
-                                                            href="/"
-                                                            className="from-muted/50 to-muted flex flex-col justify-end aspect-square rounded-md bg-linear-to-b p-4 no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md hover:text-white"
-                                                        >
-                                                            <div className="mb-2 text-lg font-medium sm:mt-4">
-                                                                shadcn/ui
-                                                            </div>
-                                                            <p className="text-muted-foreground text-sm leading-tight">
-                                                                Beautifully designed components built with Tailwind CSS.
-                                                            </p>
-                                                        </Link>
-                                                    </NavigationMenuLink>
-                                                </li>
-                                                <ListItem href="/docs" title="Introduction">
-                                                    Re-usable components built using Radix UI and Tailwind CSS.
-                                                </ListItem>
-                                                <ListItem href="/docs/installation" title="Installation">
-                                                    How to install dependencies and structure your app.
-                                                </ListItem>
-                                                <ListItem href="/docs/primitives/typography" title="Typography">
-                                                    Styles for headings, paragraphs, lists...etc
-                                                </ListItem>
+
+                                                {
+                                                    item.submenu.map((submenu, index) => {
+                                                        if (index === 0) {
+                                                            return (
+                                                                <li className="row-span-3 flex-center py-2 px-0.5" key={index}>
+                                                                    <NavigationMenuLink asChild>
+                                                                        <Link
+                                                                            href={submenu.url}
+                                                                            className="from-muted/50 to-muted flex flex-col justify-end size-full rounded-md bg-linear-to-b p-2 no-underline outline-hidden transition-all duration-200 select-none focus:shadow-md hover:text-white"
+                                                                        >
+                                                                            <div className="mb-2 text-lg font-medium sm:mt-4">
+                                                                                {submenu.label}
+                                                                            </div>
+                                                                            <p className="text-muted-foreground text-sm leading-tight">
+                                                                                {submenu.description}
+                                                                            </p>
+                                                                        </Link>
+                                                                    </NavigationMenuLink>
+                                                                </li>
+                                                            );
+                                                        }
+
+                                                        return (
+                                                            <ListItem key={index} href={submenu.url} title={submenu.label}>
+                                                                {submenu.description}
+                                                            </ListItem>
+                                                        );
+                                                    })
+                                                }
                                             </ul>
                                         </NavigationMenuContent>
                                     </NavigationMenuItem>

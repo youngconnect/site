@@ -14,9 +14,7 @@ const currentYear = new Date().getFullYear();
 export default function FooterApp() {
     return (
         <footer className="@container">
-            <div className="py-10 space-y-8">
-                <Divider />
-
+            <div className="py-10 space-y-8 border-t border-t-gray-700">
                 <div className="container mx-auto space-y-14">
                     <div className="flex justify-between items-center flex-col @md:flex-row gap-y-8 px-5 @md:px-0">
                         <div className="flex-center gap-3">
