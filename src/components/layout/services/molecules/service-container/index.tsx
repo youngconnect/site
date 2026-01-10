@@ -56,7 +56,7 @@ export function TitleServiceContainer({ title, isFirst = false }: TitleServiceCo
             </Activity>
 
             <div className="container mx-auto">
-                <div className="p-10 flex justify-center @min-lg:justify-start">
+                <div className="p-10 flex justify-center @min-md:justify-start">
                     <h2 className="text-gray-400 text-headline-24 font-medium">{title}</h2>
                 </div>
             </div>
@@ -74,10 +74,9 @@ type GridItem = {
 type GridServiceContainerProps = {
     items: GridItem[];
 }
-
 export function GridServiceContainer({ items }: GridServiceContainerProps) {
     return (
-        <ul className="grid grid-cols-1 @min-lg:grid-cols-2 @lg:grid-cols-4" role="list">
+        <ul className="grid grid-cols-1 @md:grid-cols-2 @lg:grid-cols-4" role="list">
             {
                 items.map((item, index) => (
                     <li key={index} className="p-10 flex flex-col items-start gap-8 border-y not-last:border-r border-gray-700">
