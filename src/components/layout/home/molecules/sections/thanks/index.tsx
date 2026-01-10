@@ -24,7 +24,7 @@ export default function ThanksComponent() {
                         </div>
                         <div className="text-center">
                             <h1 className="text-headline-32 font-medium">{`Obrigado pelo seu interesse na ${Env.NEXT_PUBLIC_APP_NAME}.`}</h1>
-                            <p className="text-body-14 @md:w-[65%] @sm:w-[80%] mx-auto">Nós adoraríamos ouvir de você e discutir como podemos construir as suas ideias. Aqui estão as diferentes maneiras que você pode entrar em contato conosco.</p>
+                            <p className="text-body-14 @min-lg:w-[65%] @sm:w-[80%] mx-auto">Nós adoraríamos ouvir de você e discutir como podemos construir as suas ideias. Aqui estão as diferentes maneiras que você pode entrar em contato conosco.</p>
                         </div>
                         <div className="">
                             <Button variant={"default"} className="px-6 py-2" asChild>

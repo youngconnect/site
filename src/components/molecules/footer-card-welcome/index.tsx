@@ -13,11 +13,11 @@ export default function FooterCardWelcome() {
 
             <article className="container mx-auto pt-8">
                 <div className="p-16 space-y-12">
-                    <div className="flex items-center gap-7 flex-col @md:flex-row">
+                    <div className="flex items-center gap-7 flex-col @min-lg:flex-row">
                         <div className="flex-none size-28">
                             <LogoApp size={"100%"} />
                         </div>
-                        <div className="flex-1 text-center @md:text-start space-y-3">
+                        <div className="flex-1 text-center @min-lg:text-start space-y-3">
                             <h1 className="text-headline-24 font-medium text-gray-200">
                                 Hoje, a {Env.NEXT_PUBLIC_APP_NAME} continua a prosperar como uma agência líder de produtos digitais...
                             </h1>
@@ -29,14 +29,14 @@ export default function FooterCardWelcome() {
 
                     <div className="">
                         <CardBox className="w-auto">
-                            <div className="flex items-center justify-center gap-7 flex-col @md:flex-row @md:text-start">
+                            <div className="flex items-center justify-center gap-7 flex-col @min-lg:flex-row @min-lg:text-start">
                                 <span className="text-gray-400 text-center">
                                     Bem-vindo à {Env.NEXT_PUBLIC_APP_NAME}
                                 </span>
                                 <p className="bg-gray-600 px-3 py-3 rounded-sm text-gray-200 text-center">
                                     Onde a colaboração, a experiência e o foco no cliente se cruzam para moldar o futuro da inovação digital.
                                 </p>
-                                <Link href={""} className="px-0 @md:px-5 py-3 w-full @md:w-auto bg-primary rounded-sm text-body-14 font-medium text-center">
+                                <Link href={""} className="px-0 @min-lg:px-5 py-3 w-full @min-lg:w-auto bg-primary rounded-sm text-body-14 font-medium text-center">
                                     Começar Projecto
                                 </Link>
                             </div>

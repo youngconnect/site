@@ -15,11 +15,11 @@ export default function BringServiceBanner() {
                 <div className="">
                     <LogoApp size={"clamp(4rem,5vw,7rem)"} />
                 </div>
-                <div className="@min-md:w-2/3 flex flex-col items-center text-center">
+                <div className="@min-lg:w-2/3 flex flex-col items-center text-center gap-3">
                     <h1 className="text-headline-32">
                         Deixe-nos trazer suas ideias para a vida no mundo digital.
                     </h1>
-                    <p className="@min-md:w-3/4">
+                    <p className="@min-lg:w-3/4">
                         Independentemente dos serviços que escolher, estamos empenhados em oferecer resultados excepcionais que excedam as suas expectativas. Nossa equipe multidisciplinar trabalha em conjunto para garantir uma colaboração perfeita e uma visão unificada para o seu produto digital.
                     </p>
                 </div>

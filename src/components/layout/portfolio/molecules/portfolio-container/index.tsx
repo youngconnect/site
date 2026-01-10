@@ -18,7 +18,7 @@ export function PortfolioContainer() {
                     <ul 
                         className="
                             size-full grid grid-cols-1 @min-lg:grid-cols-2
-                            @min-md:*:odd:border-r @min-md:*:odd:border-r-gray-700
+                            @min-lg:*:odd:border-r @min-lg:*:odd:border-r-gray-700
                         " 
                         role="list"
                     >
@@ -50,7 +50,7 @@ type TitleServiceContainerProps = {
 export function TitleServiceContainer({ title, isFirst = false, children }: TitleServiceContainerProps) {
     return (
         <div className="group container mx-auto" role="listitem">
-            <div className="px-10 py-5 flex justify-center @min-md:justify-start border-y border-y-gray-700 group-first:border-r group-first:border-r-gray-700">
+            <div className="px-10 py-5 flex justify-center @min-lg:justify-start border-y border-y-gray-700 group-first:border-r group-first:border-r-gray-700">
                 <h2 className="text-gray-400 text-headline-24 font-medium">{title}</h2>
             </div>
 
@@ -63,7 +63,7 @@ type GridItem = { }
 
 export function GridItemServiceContainer(props: GridItem) {
     return (
-        <div className="p-10 @min-md:pb-24 space-y-10">
+        <div className="p-10 @min-lg:pb-24 space-y-10">
             <div className="space-y-5">
                 <div className="relative aspect-square rounded-md overflow-hidden">
                     <div className="absolute inset-0">
@@ -91,7 +91,7 @@ export function GridItemServiceContainer(props: GridItem) {
                         
                         <Link 
                             href={""} 
-                            className="hidden items-center justify-center @min-md:flex  bg-gray-600 rounded-md size-10"
+                            className="hidden items-center justify-center @min-lg:flex  bg-gray-600 rounded-md size-10"
                         >
                             <Icon icon={"hugeicons:share-04"} fontSize={"1.05rem"} color="var(--primary-800)" />
                         </Link>
@@ -103,7 +103,7 @@ export function GridItemServiceContainer(props: GridItem) {
 
                         <Link 
                             href={""} 
-                            className="flex-center @min-md:hidden bg-gray-600 rounded-md size-10"
+                            className="flex-center @min-lg:hidden bg-gray-600 rounded-md size-10"
                         >
                             <Icon icon={"hugeicons:share-04"} fontSize={"1.05rem"} color="var(--primary-800)" />
                         </Link>

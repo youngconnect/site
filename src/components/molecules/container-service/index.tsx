@@ -8,13 +8,13 @@ type ContainerServiceTitleProps = Omit<ComponentProps<"div">, "title"> & {
 export function ContainerServiceTitle({ title, description, children, className, ...props }: ContainerServiceTitleProps) {
     return (
         <div 
-            className={cn("size-full @md:pt-14 border-x border-x-gray-700", className)}
+            className={cn("size-full @min-lg:pt-14 border-x border-x-gray-700", className)}
             {...props}
         >
             <div className="pt-10 flex flex-col space-y-10">
                 {/* TITLE */}
                 <div className="px-10 space-y-12 flex flex-col items-start">
-                    <div className="space-y-1 @md:max-w-3/4">
+                    <div className="space-y-1 @min-lg:max-w-3/4">
                         <h1 className="text-headline-40">{title}</h1>
                         <p className="text-body-16 text-gray-200">{description}</p>
                     </div>
