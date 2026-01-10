@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function TestimonialAuthorCard({ role, siteUrl, username, imageUrl }: TestimonialAuthor) {
     return (
-        <div className="w-full py-5 rounded-md ring ring-gray-700/95 bg-gray-700/5 overflow-hidden grid grid-cols-1 @md:grid-cols-2 min-w-0">
+        <div className="w-full py-5 rounded-md ring ring-gray-700/95 bg-gray-700/5 overflow-hidden grid grid-cols-1 @min-lg:grid-cols-2 min-w-0">
             <div className="space-x-5 flex items-center pl-5">
                 <div className="size-14 overflow-hidden rounded-md">
                     <Image 
@@ -25,7 +25,7 @@ export default function TestimonialAuthorCard({ role, siteUrl, username, imageUr
                     </h1>
                 </div>
             </div>
-            <div className="hidden @md:flex justify-end items-center pr-7">
+            <div className="hidden @min-lg:flex justify-end items-center pr-7">
                 <Button variant={"default"} className="bg-gray-700 px-7 py-2" asChild>
                     <Link href={siteUrl}>
                         Abrir website

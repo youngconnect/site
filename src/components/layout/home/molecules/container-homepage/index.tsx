@@ -26,7 +26,7 @@ const ContainerHomePage: FC<ContainerHomePageProps> = ({ ref, children, title, d
                         }
                         { 
                             typeof description === "string" ? 
-                                <p className="text-body-14 @md:w-[40%] @sm:w-[80%]">{description}</p>
+                                <p className="text-body-14 @min-lg:w-[40%] @sm:w-[80%]">{description}</p>
                                 : description // As Element
                         }
                     </div>

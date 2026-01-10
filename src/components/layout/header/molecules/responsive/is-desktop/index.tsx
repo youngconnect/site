@@ -10,7 +10,7 @@ import { Button } from "@src/components/ui/button";
 
 export default function IsDesktopHeader() {
     return (
-        <div className="size-full hidden @md:flex justify-between items-center">
+        <div className="size-full hidden @min-lg:flex justify-between items-center">
             <div className="">
                 <Link href={"/"} className="flex-center p-2 rounded-sm">
                     <LogoApp size={"2.5vw"} />

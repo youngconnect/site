@@ -19,10 +19,10 @@ export default function ContactUsPage() {
             >
                 <article className="container mx-auto">
                     <div className="p-10">
-                        <div className="flex-center flex-col @md:flex-row gap-5">
+                        <div className="flex-center flex-col @min-lg:flex-row gap-5">
                             {
                                 CONTACT_US_WAYS.map((contact, index) => (
-                                    <CardBox key={index} className="w-full @md:w-auto py-0 px-0">
+                                    <CardBox key={index} className="w-full @min-lg:w-auto py-0 px-0">
                                         <Link href={contact.url} className="flex items-center justify-center gap-3 leading-14 px-5 whitespace-nowrap">
                                             <Icon icon={contact.icon} />
                                             <span className="">{contact.label}</span>
@@ -47,7 +47,7 @@ export default function ContactUsPage() {
                 </article>
 
                 <article className="container mx-auto">
-                    <div className="flex items-center justify-center flex-col @md:flex-row">
+                    <div className="flex items-center justify-center flex-col @min-lg:flex-row">
                         <div className="p-10 inline-flex">
                             <div className="flex-center gap-3">
                                 <h6 className="">Estamos Abertos de</h6>
@@ -55,10 +55,10 @@ export default function ContactUsPage() {
                             </div>
                         </div>
 
-                        <div className="w-full @md:w-[0.95px] h-[0.85px] @md:h-42 bg-gray-700" />
+                        <div className="w-full @min-lg:w-[0.95px] h-[0.85px] @min-lg:h-42 bg-gray-700" />
 
                         <div className="p-10 inline-flex">
-                            <CardContact className="[&>div]:ring-0 @md:[&>div]:ring-2" />
+                            <CardContact className="[&>div]:ring-0 @min-lg:[&>div]:ring-2" />
                         </div>
                     </div>
                 </article>

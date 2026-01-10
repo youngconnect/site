@@ -8,8 +8,8 @@ type CardContactProps = ComponentProps<"div"> & {};
 
 export default function CardContact({ className, ...props }: CardContactProps) {
     return (
-        <div className={cn("w-full @md:w-auto px-5 @md:px-0", className)} {...props}>
-            <div className="ring-2 ring-gray-700 rounded-md px-5 py-4 flex-center gap-5 flex-col @md:flex-row">
+        <div className={cn("w-full @min-lg:w-auto px-5 @min-lg:px-0", className)} {...props}>
+            <div className="ring-2 ring-gray-700 rounded-md px-5 py-4 flex-center gap-5 flex-col @min-lg:flex-row">
                 <span className="text-body-16 font-medium">Mantenha-se conectado</span>
                 <ul className="flex items-center gap-3">
                     {
