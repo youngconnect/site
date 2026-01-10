@@ -15,7 +15,7 @@ export default function CardContact({ className, ...props }: CardContactProps) {
                     {
                         SOCIAL_MEDIA_LINKS.map((media, index) => (
                             <li key={index} className="">
-                                <Link href={media.url}>
+                                <Link href={media.url} rel="noopener noreferrer" target="_blank">
                                     <span className="rounded-md size-14 bg-gray-800 ring ring-gray-700/85 flex-center relative overflow-hidden">
                                         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(1,86,252,0.13)_0%,transparent_75%)]" />
                                         <Icon icon={media.icon} color="transparent" fontSize={"1.85rem"} style={{ color: "var(--primary-900)" }} />

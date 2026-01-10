@@ -13,6 +13,7 @@ export function PortfolioContainer() {
             <article className="container mx-auto">
                 <ContainerServiceTitle
                     title={`Na ${Env.NEXT_PUBLIC_APP_NAME}`} 
+                    message={"Aqui estão dez exemplos de nossos trabalhos notáveis:"}
                     description={"Tivemos o privilégio de trabalhar com uma gama diversificada de clientes e entregar produtos digitais excepcionais que impulsionam o sucesso."}
                 >
                     <ul 

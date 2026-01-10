@@ -4,8 +4,9 @@ import { ComponentProps } from "react";
 type ContainerServiceTitleProps = Omit<ComponentProps<"div">, "title"> & {
     title: string;
     description: string;
+    message: string;
 }
-export function ContainerServiceTitle({ title, description, children, className, ...props }: ContainerServiceTitleProps) {
+export function ContainerServiceTitle({ title, description, message, children, className, ...props }: ContainerServiceTitleProps) {
     return (
         <div 
             className={cn("size-full @min-lg:pt-14 border-x border-x-gray-700", className)}
@@ -18,7 +19,7 @@ export function ContainerServiceTitle({ title, description, children, className,
                         <h1 className="text-headline-40">{title}</h1>
                         <p className="text-body-16 text-gray-200">{description}</p>
                     </div>
-                    <span className="px-5 py-3 bg-gray-700 rounded-sm text-body-16">Our design services include:</span>
+                    <span className="px-5 py-3 bg-gray-700 rounded-sm text-body-16">{message}</span>
                 </div>
 
                 {/* CONTENT */}
