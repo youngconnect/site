@@ -23,7 +23,8 @@ export function ServiceContainer() {
                         .map((_, index) => (
                             <ContainerServiceTitle
                                 key={index}
-                                title={"Design"} 
+                                title={"Design"}
+                                message={"Nossos serviços de design incluem:"}
                                 description={"At Squareup, our design team is passionate about creating stunning, user-centric designs that captivate your audience and elevate your brand. We believe that great design is not just about aesthetics; it's about creating seamless and intuitive user experiences."}
                             >
                                 <TitleServiceContainer isFirst={true} title={"User Experience (UX) Design"} />
