@@ -1,5 +1,6 @@
 :root {
    /* Primary */
+    --primary: oklch(53.21% 0.25507 262.519);
     --primary-900: oklch(53.21% 0.25507 262.519);
     --primary-800: oklch(62.815% 0.20376 254.812);
     --primary-700: oklch(70% 0.19 254.812);
@@ -11,6 +12,7 @@
     --primary-100: oklch(97% 0.05 254.812);
   
   /* Secondary */
+    --secondary: oklch(21.684% 0.03731 258.857);
     --secondary-900: oklch(21.684% 0.03731 258.857);
     --secondary-800: oklch(30% 0.05 258.857);
     --secondary-700: oklch(40% 0.06 258.857);

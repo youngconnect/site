@@ -29,14 +29,14 @@ export default function FooterCardWelcome() {
 
                     <div className="">
                         <CardBox className="w-auto">
-                            <div className="flex items-center justify-center gap-7 flex-col @md:flex-row text-center @md:text-start">
-                                <span className="text-gray-400">
+                            <div className="flex items-center justify-center gap-7 flex-col @md:flex-row @md:text-start">
+                                <span className="text-gray-400 text-center">
                                     Bem-vindo à {Env.NEXT_PUBLIC_APP_NAME}
                                 </span>
-                                <p className="bg-gray-600 px-3 py-3 rounded-sm text-gray-200">
+                                <p className="bg-gray-600 px-3 py-3 rounded-sm text-gray-200 text-center">
                                     Onde a colaboração, a experiência e o foco no cliente se cruzam para moldar o futuro da inovação digital.
                                 </p>
-                                <Link href={""} className="px-0 @md:px-5 py-3 w-full @md:w-auto bg-primary rounded-sm text-body-14 font-medium">
+                                <Link href={""} className="px-0 @md:px-5 py-3 w-full @md:w-auto bg-primary rounded-sm text-body-14 font-medium text-center">
                                     Começar Projecto
                                 </Link>
                             </div>

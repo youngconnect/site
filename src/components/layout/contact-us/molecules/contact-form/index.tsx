@@ -27,7 +27,7 @@ const InputStyled: FC<InputStyled> = ({ placeholder, className, ...props }) => (
 );
 
 const checkboxOptions = [
-    { id: "web_design", label: "Web Design", value: 1 },
+    { id: "web_design", label: "Design", value: 1 },
     { id: "collaboration", label: "Colaboração", value: 2 },
     { id: "mobile_development", label: "Desenvolvimento Mobile", value: 3 },
     { id: "web_development", label: "Desenvolvimento Web", value: 4 },
