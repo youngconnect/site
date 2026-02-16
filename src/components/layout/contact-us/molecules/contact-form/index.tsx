@@ -68,7 +68,7 @@ export default function ContactUsForm() {
                                 name="fullname"
                                 render={({ field }) => (
                                     <FormItem>
-                                        <FormLabel className="text-headline-20 text-xl">Nome da companhia</FormLabel>
+                                        <FormLabel className="text-headline-20 text-xl">Nome da sua companhia</FormLabel>
                                         <FormControl>
                                             <InputStyled type="text" {...field} />
                                         </FormControl>
@@ -96,7 +96,7 @@ export default function ContactUsForm() {
                     </div>
 
                     <CardBox className="w-auto">
-                        <h6 className="text-headline-20 text-xl">Por que você está nos contatando?</h6>
+                        <h6 className="text-headline-20 text-xl">Quais serviços deseja?</h6>
                         <FormField
                             control={form.control}
                             name="services"

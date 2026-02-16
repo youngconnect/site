@@ -1,6 +1,5 @@
 import Env from "@src/config/environment";
 import ContainerHomePage from "../home/molecules/container-homepage";
-import { Fragment } from "react/jsx-runtime";
 import { ProcessContainer } from "./molecules/process-container";
 
 export default function ProcessPage() {
