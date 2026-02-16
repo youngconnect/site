@@ -15,7 +15,14 @@ export default function ServicesComponent() {
                 <div className="grid grid-cols-1 @min-lg:grid-cols-3">
                     {
                         SERVICES.map((service, index) => (
-                            <div key={index} className="space-y-24 p-10 @sm:border-b @sm:last:border-b-0 @min-lg:border-r @min-lg:border-b-0 @min-lg:last:border-r-0 border-gray-700">
+                            <div 
+                                key={index} 
+                                className="
+                                    space-y-24 p-10 odd:border-x odd:border-x-gray-700 
+                                    border-b border-b-gray-700 last:border-b-0
+                                    @min-lg:border-b-0
+                                "
+                            >
                                 <div className="space-y-5 h-85">
                                     <div className="">
                                         <span className="rounded-md size-22 bg-gray-800 ring ring-gray-700/85 flex-center relative overflow-hidden">
