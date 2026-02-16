@@ -22,8 +22,8 @@ export function ProcessContainer() {
                     >
                         {
                             PROCESS_FLOW.map((process, index) => (
-                                    <GridItemServiceContainer key={index} index={index + 1} {...process} />
-                                ))
+                                <GridItemServiceContainer key={index} index={index + 1} {...process} />
+                            ))
                         }
                     </ul>
                 </ContainerServiceTitle>

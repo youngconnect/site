@@ -1,11 +1,11 @@
+import Link from "next/link";
+import { Icon } from "@iconify/react";
+import { CONTACT_US_WAYS } from "./constants";
+import Divider from "@src/components/atoms/divider";
+import ContactUsForm from "./molecules/contact-form";
+import FAQComponent from "../home/molecules/sections/faq";
 import CardBox from "@src/components/atoms/card-container";
 import ContainerHomePage from "../home/molecules/container-homepage";
-import FAQComponent from "../home/molecules/sections/faq";
-import { CONTACT_US_WAYS } from "./constants";
-import ContactUsForm from "./molecules/contact-form";
-import { Icon } from "@iconify/react";
-import Link from "next/link";
-import Divider from "@src/components/atoms/divider";
 import FooterCardWelcome from "@src/components/molecules/footer-card-welcome";
 import CardContact from "@src/components/molecules/footer/molecules/card-contact";
 

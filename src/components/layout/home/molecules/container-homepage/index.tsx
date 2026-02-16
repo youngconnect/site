@@ -19,12 +19,12 @@ const ContainerHomePage: FC<ContainerHomePageProps> = ({ ref, children, title, d
                 </div>
                 <div className="container mx-auto relative z-3">
                     <div className="min-h-72 flex flex-col items-center justify-center gap-1 text-center">
-                        { 
+                        {
                             typeof title === "string" ? 
                                 <h1 className="text-headline-40">{title}</h1>
                                 : title // As Element
                         }
-                        { 
+                        {
                             typeof description === "string" ? 
                                 <p className="text-body-14 @min-lg:w-[40%] @sm:w-[80%]">{description}</p>
                                 : description // As Element
