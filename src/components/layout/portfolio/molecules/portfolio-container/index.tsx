@@ -1,4 +1,4 @@
-import { Activity, ReactNode } from "react";
+import { ReactNode } from "react";
 import { Fragment } from "react/jsx-runtime";
 import { ContainerServiceTitle } from "@src/components/molecules/container-service";
 import Env from "@src/config/environment";
